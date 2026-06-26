@@ -6,12 +6,12 @@ This is the core Machine Learning and Artificial Intelligence pipeline for the *
 
 ## 🛠️ Tech Stack & Frameworks
 
-<p align="left">
-  <img src="https://shields.io" alt="Python" />
-  <img src="https://shields.io" alt="LangChain" />
-  <img src="https://shields.io" alt="Google Gemini" />
-  <img src="https://shields.io" alt="FAISS" />
-</p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75FF?style=for-the-badge&logo=googlegemini&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-044A64?style=for-the-badge&logo=facebook&logoColor=white)
+
+
 
 *   **Orchestration Framework:** `LangChain` (Core, Community, and Expression Language / LCEL)
 *   **Foundation LLM:** `Google GenAI` (`gemini-2.0-flash`)
