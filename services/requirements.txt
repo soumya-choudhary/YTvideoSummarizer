@@ -1,0 +1,19 @@
+# LangChain Core and Community components
+langchain-core
+langchain-community
+
+# Text splitting utilities
+langchain
+
+# Google Gemini integration (Embeddings and Chat LLM)
+langchain-google-genai
+
+# Vector database storage
+faiss-cpu
+
+# Environment variable management (.env)
+python-dotenv
+
+# YouTube fetching tools
+requests
+youtube-transcript-api
