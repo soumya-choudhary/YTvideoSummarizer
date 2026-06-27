@@ -2,20 +2,71 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following table describes which versions of **YTvideoSummarizer** are currently supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version        | Supported |
+| -------------- | --------- |
+| Latest (main)  | ✅         |
+| Older releases | ❌         |
+
+> **Note:** Security updates are provided only for the latest version available on the `main` branch. Users are encouraged to keep their installations up to date.
+
+---
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability in **YTvideoSummarizer**, please report it responsibly.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### How to Report
+
+* Open a **private GitHub Security Advisory**, if available.
+* Or contact the maintainer directly by email (replace with your email):
+
+```
+your-email@example.com
+```
+
+Please include:
+
+* A detailed description of the vulnerability.
+* Steps to reproduce the issue.
+* The affected version(s).
+* Any proof-of-concept or screenshots (if applicable).
+* Suggested mitigation (optional).
+
+---
+
+## Response Timeline
+
+You can expect the following response times:
+
+* **Acknowledgement:** Within **48 hours**
+* **Initial Assessment:** Within **5 business days**
+* **Security Fix (if confirmed):** As soon as reasonably possible, depending on severity.
+
+---
+
+## Responsible Disclosure
+
+Please **do not publicly disclose** the vulnerability until a fix has been released.
+
+Responsible disclosure helps protect users while allowing sufficient time to investigate and resolve the issue.
+
+---
+
+## Scope
+
+This security policy applies to:
+
+* React Frontend
+* Node.js Backend
+* Python Flask AI Microservice
+* Authentication System (JWT & Google OAuth)
+* MongoDB Integration
+* API Endpoints
+
+Third-party services such as Google Gemini API, MongoDB Atlas, and YouTube Transcript API are governed by their own security policies.
+
+---
+
+Thank you for helping improve the security of **YTvideoSummarizer**.
