@@ -2,7 +2,7 @@ import { AppError } from "../utils/AppError.util.js";
 import config from "../config/config.js";
 import Video from "../models/video.model.js";
 import UserVideoData from "../models/uservideodata.model.js";
-import { updateVecStore } from "../utils/updateVectorStore.js";
+import { updateVecStore } from "../utils/updateVectorStore.util.js";
 
 const getAllVideos = async (req, res, next) => {
     try {

@@ -27,17 +27,18 @@ def videoData():
     transcript_text = result["transcript_text"];
     formatted_transcript = result["formatted_transcript"];
 
-    summary = sumTranscript(transcript_text);
-    chapters = generate_chapters(formatted_transcript);
+    try:
+        summary = sumTranscript(transcript_text);
+        chapters = generate_chapters(formatted_transcript);
 
-
-    return jsonify({
-            "title":title,
-            "transcript":formatted_transcript,
-            "chapter":chapters,
-            "summary": summary
-        });
-    
+        return jsonify({
+                "title":title,
+                "transcript":formatted_transcript,
+                "chapter":chapters,
+                "summary": summary
+            });
+    except Exception as e:
+        return jsonify({"error": f"AI generation failed: {str(e)}"}), 500;
 @app.route('/api/update-vector-store', methods=['POST'])
 def update_vector():
     data = request.get_json()

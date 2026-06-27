@@ -6,7 +6,9 @@ import LoginPage from "./pages/LoginPage.jsx";
 import SearchPage from "./pages/SearchPage.jsx";
 import LearningPage from "./pages/LearningPage.jsx";
 
-import { createBrowserRouter, redirect, RouterProvider } from "react-router";
+import ErrorPage from "./pages/ErrorPage.jsx";
+
+import { createBrowserRouter, redirect, RouterProvider } from "react-router-dom";
 import { GlobalContextProvider } from "./context/GlobalContext.jsx";
 import { Toaster } from "react-hot-toast";
 
@@ -21,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component: HomeLayout,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, Component: LandingPage },
       { path: "signup", Component: Signup },

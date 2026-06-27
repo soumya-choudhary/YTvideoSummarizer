@@ -29,7 +29,7 @@ def update_vector_store(transcript):
     vector_store = FAISS.from_documents(chunks, embedding)
     retriever = vector_store.as_retriever()
 
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
     prompt = PromptTemplate.from_template("""
     You are a helpful AI assistant. Answer the question strictly based ONLY on the transcript context provided below.
 

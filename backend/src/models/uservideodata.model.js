@@ -1,32 +1,28 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const userVideoDataSchema = new mongoose.Schema(
     {
-        username: {
-            type: String,
-            unique: true,
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            required: true,
         },
-        password: {
-            type: String,
-            minlength: 6,
+        video: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Video",
+            required: true,
         },
-        googleId: {
+        notes: {
             type: String,
-            unique: true,
-            sparse: true,
+            default: "",
         },
-        fullname: {
-            type: String,
-        },
-        email: {
-            type: String,
-        },
-        profilePic: {
-            type: String,
+        chatHistory: {
+            type: Array,
+            default: [],
         },
     },
-    { timestamps: true },
+    { timestamps: true }
 );
 
-const User = mongoose.model("User", userSchema);
-export default User;
+const UserVideoData = mongoose.model("UserVideoData", userVideoDataSchema);
+export default UserVideoData;
